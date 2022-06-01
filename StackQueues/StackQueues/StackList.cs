@@ -27,6 +27,32 @@ namespace StackQueues
             this.top = node;
             Console.WriteLine(" Push value in list " + value);
         }
+        internal void peek()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is Empty");
+            }
+            Console.WriteLine("\n is in the top of stack " + this.top.data);
+        }
+        internal void pop()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is Empty");
+            }
+            Console.WriteLine("\n Pop out element is " + this.top.data);
+            this.top =this.top.next;
+        }
+        internal void isEmpty()
+        {
+            while (this.top != null)
+            {
+                peek();
+                pop();
+            }
+            Console.WriteLine("Stack is empty");
+        }
         internal void Display()
         {
             Node temp = this.top;
@@ -36,6 +62,5 @@ namespace StackQueues
                 temp = temp.next;
             }
         }
-
     }
 }
