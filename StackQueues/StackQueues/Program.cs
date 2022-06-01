@@ -9,3 +9,8 @@ linkedListStack.pop();
 linkedListStack.Display();
 linkedListStack.isEmpty();
 linkedListStack.Display();
+StackQueues.QueueList queueList = new StackQueues.QueueList();
+queueList.Enqueue(56);
+queueList.Enqueue(30);
+queueList.Enqueue(70);
+queueList.Display();
